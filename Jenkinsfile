@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing jenkins-test..'
-                sleep time:5 unit: SECONDS
+                sleep (time: 5, unit: "SECONDS")
                 echo 'Done'
             }
         }
