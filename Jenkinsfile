@@ -20,12 +20,12 @@ pipeline {
             steps {
                 echo 'Debug env vars for jenkins-test....'
                 sh 'sleep 5'
-                echo 'BUILD_ID=${env.BUILD_ID}'
-                echo 'BUILD_DISPLAY_NAME=${env.BUILD_DISPLAY_NAME}'
-                echo 'JOB_NAME=${env.JOB_NAME}'
-                echo 'BUILD_URL=${env.BUILD_URL}'
-                echo 'durationString=${currentBuild.durationString}'
-                echo 'TAG_NAME=${env.TAG_NAME}'
+                echo 'BUILD_ID=${BUILD_ID}'
+                echo 'BUILD_DISPLAY_NAME=${BUILD_DISPLAY_NAME}'
+                echo 'JOB_NAME=${JOB_NAME}'
+                echo 'BUILD_URL=${BUILD_URL}'
+                echo 'durationString=${durationString}'
+                echo 'TAG_NAME=${TAG_NAME}'
                 echo ''
                 echo 'Done'
             }
